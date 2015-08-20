@@ -3,10 +3,10 @@ project(CppClasses)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp CppClass01.cpp CppClass01.h ch01w01.cpp ch01w01.h)
+set(SOURCE_FILES main.cpp CppClass01.cpp CppClass01.h CppBasics/ch01w01.cpp CppBasics/ch01w01.h)
 add_executable(CppClasses main.cpp)
 add_executable(CppClass01 CppClass01.cpp CppClass01.h)
-add_executable(ch01w01 ch01w01.cpp ch01w01.h ch03cl02.cpp ch03cl02.h)
+add_executable(ch01w01 CppBasics/ch01w01.cpp CppBasics/ch01w01.h)
 add_executable(ch01w02 ch01w02.cpp ch01w02.h)
 add_executable(ch02cl02 ch02cl02.cpp ch02cl02.h)
 add_executable(ch02cl03 ch02cl03.cpp ch02cl03.h)
